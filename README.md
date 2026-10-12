@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIZZAHIANZZ | Batch 11 Official Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            DEFAULT: '#d4af37',
+                            light: '#f3e5ab',
+                            dark: '#aa7c11',
+                            metallic: '#c5a059'
+                        },
+                        emerald: {
+                            deep: '#0a2f1d',
+                            base: '#11422a',
+                            light: '#1b5e3f'
+                        },
+                        parchment: {
+                            DEFAULT: '#fdfbf7',
+                            card: '#ffffff',
+                            muted: '#f4efe6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+                        arabic: ['Traditional Arabic', 'Amiri', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .paper-closure-border {
+            border: 2px solid #d4af37;
+            box-shadow: 0 10px 30px -10px rgba(10, 47, 29, 0.15), inset 0 0 15px rgba(212, 175, 55, 0.1);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #bf953f, #fc6, #fbf5b7, #aa7c11);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #0a2f1d 0%, #154c31 100%);
+        }
+        .glow-gold {
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fdfbf7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-parchment text-emerald-deep antialiased selection:bg-gold selection:text-emerald-deep">
+
+    <!-- Talent Fest Quick Navigation Banner -->
+    <div id="top-banner" class="bg-gradient-to-r from-emerald-deep via-emerald-base to-emerald-deep text-gold border-b border-gold/40 py-2 px-4 text-center text-xs md:text-sm font-semibold tracking-wider uppercase sticky top-0 z-50 shadow-md flex items-center justify-center gap-3">
+        <span>✨ EIZZAHIANZZ TALENT FEST LIVE: 4 Houses, 0 Points Start! ✨</span>
+        <a href="#fest" class="underline hover:text-white transition-colors px-2 py-0.5 bg-gold/20 rounded border border-gold/40">Jump to Fest →</a>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="bg-emerald-deep/95 backdrop-blur-md sticky top-[37px] z-40 border-b border-gold/30 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-full border-2 border-gold flex items-center justify-center bg-emerald-base text-gold font-bold text-xl shadow-inner">
+                        E11
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-black tracking-widest gold-gradient-text">EIZZAHIANZZ</span>
+                        <p class="text-[10px] text-gold/80 tracking-widest uppercase">Noorul Huda Central for Excellence</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+                    <a href="#about" class="text-gold/90 hover:text-gold transition-colors">About</a>
+                    <a href="#members" class="text-gold/90 hover:text-gold transition-colors">The 36</a>
+                    <a href="#portals" class="text-gold/90 hover:text-gold transition-colors">Portals</a>
+                    <a href="#fest" class="text-gold/90 hover:text-gold transition-colors">Talent Fest</a>
+                    <a href="#academics" class="text-gold/90 hover:text-gold transition-colors">Academics</a>
+                    <a href="#memories" class="text-gold/90 hover:text-gold transition-colors">Memories</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gold p-2 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-emerald-deep border-t border-gold/20 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block text-gold py-2 border-b border-gold/10">About</a>
+            <a href="#members" class="block text-gold py-2 border-b border-gold/10">The 36</a>
+            <a href="#portals" class="block text-gold py-2 border-b border-gold/10">Portals</a>
+            <a href="#fest" class="block text-gold py-2 border-b border-gold/10">Talent Fest</a>
+            <a href="#academics" class="block text-gold py-2 border-b border-gold/10">Academics</a>
+            <a href="#memories" class="block text-gold py-2">Memories</a>
+        </div>
+    </nav>
+
+    <!-- Header & Hero Section -->
+    <header class="relative gold-gradient-bg text-white py-20 px-4 overflow-hidden border-b-4 border-gold">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-gold/10 border border-gold/40 text-gold text-xs font-semibold uppercase tracking-widest mb-6">
+                Batch 11 • Noorul Huda Central for Excellence, Madanoor
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 gold-gradient-text drop-shadow-md">
+                EIZZAHIANZZ
+            </h1>
+            <p class="text-lg md:text-2xl text-gold-light max-w-3xl mx-auto font-light leading-relaxed mb-10">
+                "We are Eizzahianzz — 36 students learning, leading and growing together in Madanoor."
+            </p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-emerald-deep font-semibold">
+                <div class="bg-parchment/90 backdrop-blur border border-gold rounded-xl p-4 shadow-lg">
+                    <div class="text-2xl md:text-3xl font-black text-emerald-base">36+</div>
+                    <div class="text-xs text-gray-600 uppercase tracking-wider mt-1">Batch Students</div>
+                </div>
+                <div class="bg-parchment/90 backdrop-blur border border-gold rounded-xl p-4 shadow-lg">
+                    <div class="text-2xl md:text-3xl font-black text-emerald-base">456+</div>
+                    <div class="text-xs text-gray-600 uppercase tracking-wider mt-1">Campus Students</div>
+                </div>
+                <div class="bg-parchment/90 backdrop-blur border border-gold rounded-xl p-4 shadow-lg col-span-2 md:col-span-2 flex flex-col justify-center">
+                    <div class="text-sm font-bold text-emerald-base">Darul Huda Islamic University</div>
+                    <div class="text-xs text-gray-600 uppercase tracking-wider mt-1">Affiliated Institution • Kerala</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-20">
+
+        <!-- About Section -->
+        <section id="about" class="bg-parchment-card paper-closure-border rounded-2xl p-8 md:p-12 relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-gold/5 rounded-full pointer-events-none blur-2xl"></div>
+            <div class="max-w-3xl">
+                <span class="text-gold-dark font-bold tracking-widest text-xs uppercase block mb-2">Our Story & Heritage</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-deep mb-6">Excellence begins with character.</h2>
+                <div class="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
+                    <p>
+                        <strong>Eizzah</strong> represents the eleventh batch of Noorul Huda Central for Excellence, Madanoor — a place where Islamic scholarship and contemporary education are woven into one purposeful journey. Located in Puttur Taluk, Dakshina Kannada District, Karnataka, our institution is renowned for shaping disciplined scholars and modern leaders.
+                    </p>
+                    <p>
+                        Across the classroom, the field and the stage, our batch grows through curiosity, service, brotherhood, and the steady pursuit of <em>Ihsan</em> (excellence).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Class Members Directory (The 36) -->
+        <section id="members" class="space-y-8">
+            <div class="text-center max-w-2xl mx-auto">
+                <span class="text-gold-dark font-bold tracking-widest text-xs uppercase block mb-1">— The 36 —</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-deep">Names that make our story.</h2>
+                <p class="text-gray-600 mt-2">Find a classmate below in our official roster.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="members-grid"></div>
+        </section>
+
+        <!-- Digital Campus Portals -->
+        <section id="portals" class="space-y-8">
+            <div class="text-center max-w-2xl mx-auto">
+                <span class="text-gold-dark font-bold tracking-widest text-xs uppercase block mb-1">— Digital Campus —</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-deep">One place for every part of learning.</h2>
+                <p class="text-gray-600 mt-2">Choose a workspace to preview the tools designed for daily campus life.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- 01. Student Portal -->
+                <div class="bg-parchment-card paper-closure-border rounded-2xl p-6 md:p-8 flex flex-col justify-between shadow-md">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold px-3 py-1 bg-emerald-deep text-gold rounded-full">01 • Portal</span>
+                            <span class="text-xs text-gray-500 font-mono">Password: eizzahbatch</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-emerald-deep mb-2">Student Portal</h3>
+                        <p class="text-gray-600 text-sm mb-6">Track attendance, assignment submissions, bilingual typing tests, and AI doubt solver.</p>
+                        
+                        <div id="gate-student" class="space-y-3 mb-4">
+                            <input type="password" id="pass-student" placeholder="Enter student password" class="w-full px-4 py-2 border border-gold/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold text-sm">
+                            <button onclick="loginPortal('student', 'eizzahbatch')" class="w-full py-2.5 bg-emerald-deep text-gold font-bold rounded-lg hover:bg-emerald-base transition-colors shadow">Access Student Workspace</button>
+                        </div>
+
+                        <div id="content-student" class="hidden space-y-6 pt-2 border-t border-gold/20">
+                            <div class="bg-emerald-deep/5 p-4 rounded-xl border border-gold/30">
+                                <h4 class="font-bold text-emerald-deep text-sm mb-1">📊 Attendance Status</h4>
+                                <p class="text-sm text-gray-700">Overall Attendance: <span class="font-bold text-emerald-600">96.5%</span> (Status: Excellent)</p>
+                            </div>
+
+                            <div class="space-y-3 bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <h4 class="font-bold text-emerald-deep text-sm">📝 Assignment Submission</h4>
+                                <select id="sub-subject" class="w-full p-2 text-sm border rounded bg-white">
+                                    <option>Select Subject</option>
+                                    <option>Qur'anic Sciences & Tajweed</option>
+                                    <option>Islamic Jurisprudence (Fiqh)</option>
+                                    <option>Arabic Literature & Grammar</option>
+                                    <option>Modern Social Sciences & English</option>
+                                </select>
+                                <input type="text" id="sub-title" placeholder="Assignment Title / Topic" class="w-full p-2 text-sm border rounded bg-white">
+                                <input type="file" id="sub-file" class="w-full text-xs text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-gold/20 file:text-emerald-deep hover:file:bg-gold/30">
+                                <button onclick="submitAssignment()" class="w-full py-2 bg-emerald-base text-gold font-semibold text-xs rounded hover:bg-emerald-deep transition">Submit Assignment</button>
+                                <p id="sub-msg" class="text-xs text-green-600 font-medium hidden">Assignment uploaded successfully!</p>
+                            </div>
+
+                            <div class="space-y-3 bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <div class="flex justify-between items-center">
+                                    <h4 class="font-bold text-emerald-deep text-sm">⌨️ Bilingual Typing Trainer (EN / AR)</h4>
+                                    <button onclick="switchTypingLang()" id="typing-lang-btn" class="text-xs bg-gold/30 text-emerald-deep px-2 py-1 rounded font-bold">Switch to Arabic</button>
+                                </div>
+                                <p id="typing-prompt" class="text-xs text-gray-600 font-medium p-2 bg-white rounded border">Type this: "Excellence begins with character in Eizzahianzz."</p>
+                                <textarea id="typing-input" oninput="checkTyping()" placeholder="Start typing here to test speed..." class="w-full p-2 text-xs border rounded bg-white h-16"></textarea>
+                                <div class="flex justify-between text-xs text-gray-600 font-semibold">
+                                    <span>WPM: <span id="wpm-count" class="text-emerald-deep font-bold">0</span></span>
+                                    <span>Accuracy: <span id="acc-count" class="text-emerald-deep font-bold">100</span>%</span>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3 bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <h4 class="font-bold text-emerald-deep text-sm">🤖 AI Academic Doubt Solver</h4>
+                                <div id="ai-chat-box" class="h-28 bg-white p-2 rounded border overflow-y-auto text-xs space-y-2">
+                                    <div class="text-gray-500 italic">Ask any question regarding Fiqh, Hadith, Arabic grammar or secular subjects...</div>
+                                </div>
+                                <div class="flex gap-2">
+                                    <input type="text" id="ai-query" placeholder="Ask your doubt..." class="flex-1 p-2 text-xs border rounded bg-white">
+                                    <button onclick="askAI()" class="px-3 py-2 bg-gold text-emerald-deep font-bold text-xs rounded hover:bg-gold-dark transition">Ask AI</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
+                        <span>Status: <span id="status-student" class="text-amber-600 font-bold">Locked</span></span>
+                        <button onclick="logoutPortal('student')" id="logout-student" class="hidden text-red-600 font-bold hover:underline">Lock Portal</button>
+                    </div>
+                </div>
+
+                <!-- 02. Class Leader Portal -->
+                <div class="bg-parchment-card paper-closure-border rounded-2xl p-6 md:p-8 flex flex-col justify-between shadow-md">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold px-3 py-1 bg-emerald-deep text-gold rounded-full">02 • Portal</span>
+                            <span class="text-xs text-gray-500 font-mono">Password: 2025-2037</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-emerald-deep mb-2">Class Leader Portal</h3>
+                        <p class="text-gray-600 text-sm mb-6">Coordinate daily attendance, record absentees, and view historical attendance logs.</p>
+                        
+                        <div id="gate-leader" class="space-y-3 mb-4">
+                            <input type="password" id="pass-leader" placeholder="Enter leader password" class="w-full px-4 py-2 border border-gold/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold text-sm">
+                            <button onclick="loginPortal('leader', '2025-2037')" class="w-full py-2.5 bg-emerald-deep text-gold font-bold rounded-lg hover:bg-emerald-base transition-colors shadow">Access Leader Workspace</button>
+                        </div>
+
+                        <div id="content-leader" class="hidden space-y-4 pt-2 border-t border-gold/20">
+                            <div class="space-y-3 bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <h4 class="font-bold text-emerald-deep text-sm">📅 Daily Attendance Record</h4>
+                                <input type="date" id="att-date" class="w-full p-2 text-sm border rounded bg-white">
+                                <input type="text" id="att-absentees" placeholder="Absent student numbers (e.g., 4, 12, 25)" class="w-full p-2 text-sm border rounded bg-white">
+                                <button onclick="saveAttendance()" class="w-full py-2 bg-emerald-base text-gold font-semibold text-xs rounded hover:bg-emerald-deep transition">Upload Today's Attendance</button>
+                                <p id="att-msg" class="text-xs text-green-600 font-medium hidden">Attendance uploaded successfully!</p>
+                            </div>
+
+                            <div class="bg-white p-3 rounded border text-xs space-y-1">
+                                <h5 class="font-bold text-emerald-deep">Recent Attendance History</h5>
+                                <div id="attendance-history-list" class="text-gray-600 max-h-24 overflow-y-auto space-y-1">
+                                    <div class="flex justify-between border-b pb-1"><span>2026-06-05</span><span class="text-green-600 font-bold">All 36 Present</span></div>
+                                    <div class="flex justify-between border-b pb-1"><span>2026-06-04</span><span>1 Absent (#14)</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
+                        <span>Status: <span id="status-leader" class="text-amber-600 font-bold">Locked</span></span>
+                        <button onclick="logoutPortal('leader')" id="logout-leader" class="hidden text-red-600 font-bold hover:underline">Lock Portal</button>
+                    </div>
+                </div>
+
+                <!-- 03. Teacher Portal -->
+                <div class="bg-parchment-card paper-closure-border rounded-2xl p-6 md:p-8 flex flex-col justify-between shadow-md">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold px-3 py-1 bg-emerald-deep text-gold rounded-full">03 • Portal</span>
+                            <span class="text-xs text-gray-500 font-mono">Password: 2026-2027</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-emerald-deep mb-2">Teacher Portal</h3>
+                        <p class="text-gray-600 text-sm mb-6">Review marks, student performance, daily attendance history modifications, and Talent Fest scores.</p>
+                        
+                        <div id="gate-teacher" class="space-y-3 mb-4">
+                            <input type="password" id="pass-teacher" placeholder="Enter teacher password" class="w-full px-4 py-2 border border-gold/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold text-sm">
+                            <button onclick="loginPortal('teacher', '2026-2027')" class="w-full py-2.5 bg-emerald-deep text-gold font-bold rounded-lg hover:bg-emerald-base transition-colors shadow">Access Teacher Workspace</button>
+                        </div>
+
+                        <div id="content-teacher" class="hidden space-y-4 pt-2 border-t border-gold/20">
+                            <div class="space-y-3 bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <h4 class="font-bold text-emerald-deep text-sm">📊 Update Student Performance & Marks</h4>
+                                <select id="teacher-student-select" class="w-full p-2 text-sm border rounded bg-white"></select>
+                                <input type="number" id="teacher-mark" placeholder="Enter Exam Score / Mark (out of 100)" class="w-full p-2 text-sm border rounded bg-white">
+                                <button onclick="teacherUpdateMark()" class="w-full py-2 bg-emerald-base text-gold font-semibold text-xs rounded hover:bg-emerald-deep transition">Save & Publish Mark</button>
+                                <p id="teacher-msg" class="text-xs text-green-600 font-medium hidden">Mark updated successfully!</p>
+                            </div>
+
+                            <div class="space-y-3 bg-gray-50 p-4 rounded-xl border border-gray-200">
+                                <h4 class="font-bold text-emerald-deep text-sm">🏆 Update Talent Fest Scores</h4>
+                                <select id="fest-team-select" class="w-full p-2 text-sm border rounded bg-white">
+                                    <option value="vortex">Vortex</option>
+                                    <option value="phoenix">Phoenix</option>
+                                    <option value="titans">Titans</option>
+                                    <option value="dynasty">Dynasty</option>
+                                </select>
+                                <div class="flex gap-2">
+                                    <input type="number" id="fest-arts-add" placeholder="Add Arts Points" class="w-1/2 p-2 text-sm border rounded bg-white">
+                                    <input type="number" id="fest-sports-add" placeholder="Add Sports Points" class="w-1/2 p-2 text-sm border rounded bg-white">
+                                </div>
+                                <button onclick="teacherAddFestPoints()" class="w-full py-2 bg-gold text-emerald-deep font-bold text-xs rounded hover:bg-gold-dark transition">Update Fest Leaderboard</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
+                        <span>Status: <span id="status-teacher" class="text-amber-600 font-bold">Locked</span></span>
+                        <button onclick="logoutPortal('teacher')" id="logout-teacher" class="hidden text-red-600 font-bold hover:underline">Lock Portal</button>
+                    </div>
+                </div>
+
+                <!-- 04. Administrator Portal -->
+                <div class="bg-parchment-card paper-closure-border rounded-2xl p-6 md:p-8 flex flex-col justify-between shadow-md">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold px-3 py-1 bg-emerald-deep text-gold rounded-full">04 • Portal</span>
+                            <span class="text-xs text-gray-500 font-mono">Password: 2013-2025</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-emerald-deep mb-2">Administrator Portal</h3>
+                        <p class="text-gray-600 text-sm mb-6">Oversee access, system configuration, master database records, and campus information.</p>
+                        
+                        <div id="gate-admin" class="space-y-3 mb-4">
+                            <input type="password" id="pass-admin" placeholder="Enter admin password" class="w-full px-4 py-2 border border-gold/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold text-sm">
+                            <button onclick="loginPortal('admin', '2013-2025')" class="w-full py-2.5 bg-emerald-deep text-gold font-bold rounded-lg hover:bg-emerald-base transition-colors shadow">Access Admin Workspace</button>
+                        </div>
+
+                        <div id="content-admin" class="hidden space-y-4 pt-2 border-t border-gold/20">
+                            <div class="bg-red-50 border border-red-200 p-4 rounded-xl space-y-3">
+                                <h4 class="font-bold text-red-800 text-sm">🛡️ Master System Controls</h4>
+                                <p class="text-xs text-gray-600">Full administrative privileges active. You can modify batch configurations, reset passwords, or broadcast campus notices.</p>
+                                <input type="text" id="admin-notice" placeholder="Broadcast notice to all portals..." class="w-full p-2 text-sm border rounded bg-white">
+                                <button onclick="adminBroadcast()" class="w-full py-2 bg-red-700 text-white font-bold text-xs rounded hover:bg-red-800 transition">Broadcast Notice</button>
+                                <p id="admin-msg" class="text-xs text-green-700 font-medium hidden">Notice broadcasted successfully!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
+                        <span>Status: <span id="status-admin" class="text-amber-600 font-bold">Locked</span></span>
+                        <button onclick="logoutPortal('admin')" id="logout-admin" class="hidden text-red-600 font-bold hover:underline">Lock Portal</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Talent Fest Section -->
+        <section id="fest" class="bg-parchment-card paper-closure-border rounded-2xl p-8 md:p-12 space-y-8">
+            <div class="text-center max-w-2xl mx-auto">
+                <span class="text-gold-dark font-bold tracking-widest text-xs uppercase block mb-1">— Talent Fest —</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-deep">Four houses. Points start at zero.</h2>
+                <p class="text-gray-600 mt-2">New season • All scores 0 initially. Experience the ultimate campus clash.</p>
+                <div class="mt-4 text-xs font-semibold text-emerald-base bg-gold/20 py-2 px-4 rounded-full inline-block border border-gold/40">
+                    Event In-charges: Abdul Rahmaan • Ahmad Fathah • Fazal • Abdul Afham
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Vortex -->
+                <div class="bg-parchment border-2 border-gold/60 rounded-xl p-5 shadow-sm hover:shadow-md transition">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-black text-xl text-emerald-deep">VORTEX</h3>
+                        <span class="text-xs px-2 py-0.5 bg-gold text-emerald-deep font-bold rounded">House 1</span>
+                    </div>
+                    <div class="space-y-1.5 text-xs text-gray-700 mb-4">
+                        <p><strong>Captain:</strong> Muhammad Afeef</p>
+                        <p><strong>Icon:</strong> Muhammad Musthafa</p>
+                        <p class="text-gray-500 mt-2"><strong>Members:</strong> shamseer, shayan, ajmal, rihan, niyaf, sahal t.h</p>
+                    </div>
+                    <div class="bg-emerald-deep text-gold p-3 rounded-lg text-center">
+                        <div class="text-[10px] uppercase tracking-wider text-gold/80">Total Points</div>
+                        <div class="text-2xl font-black" id="score-vortex">0</div>
+                    </div>
+                </div>
+
+                <!-- Phoenix -->
+                <div class="bg-parchment border-2 border-gold/60 rounded-xl p-5 shadow-sm hover:shadow-md transition">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-black text-xl text-emerald-deep">PHOENIX</h3>
+                        <span class="text-xs px-2 py-0.5 bg-gold text-emerald-deep font-bold rounded">House 2</span>
+                    </div>
+                    <div class="space-y-1.5 text-xs text-gray-700 mb-4">
+                        <p><strong>Captain:</strong> Lubaib</p>
+                        <p><strong>Icon:</strong> Affan</p>
+                        <p class="text-gray-500 mt-2"><strong>Members:</strong> favaz, muhad, ali, shabeeb, ismail, najeeb</p>
+                    </div>
+                    <div class="bg-emerald-deep text-gold p-3 rounded-lg text-center">
+                        <div class="text-[10px] uppercase tracking-wider text-gold/80">Total Points</div>
+                        <div class="text-2xl font-black" id="score-phoenix">0</div>
+                    </div>
+                </div>
+
+                <!-- Titans -->
+                <div class="bg-parchment border-2 border-gold/60 rounded-xl p-5 shadow-sm hover:shadow-md transition">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-black text-xl text-emerald-deep">TITANS</h3>
+                        <span class="text-xs px-2 py-0.5 bg-gold text-emerald-deep font-bold rounded">House 3</span>
+                    </div>
+                    <div class="space-y-1.5 text-xs text-gray-700 mb-4">
+                        <p><strong>Captain:</strong> Azfar</p>
+                        <p><strong>Icon:</strong> Ihab</p>
+                        <p class="text-gray-500 mt-2"><strong>Members:</strong> farooq, zaid, siddiq, aflal, hisham, raif</p>
+                    </div>
+                    <div class="bg-emerald-deep text-gold p-3 rounded-lg text-center">
+                        <div class="text-[10px] uppercase tracking-wider text-gold/80">Total Points</div>
+                        <div class="text-2xl font-black" id="score-titans">0</div>
+                    </div>
+                </div>
+
+                <!-- Dynasty -->
+                <div class="bg-parchment border-2 border-gold/60 rounded-xl p-5 shadow-sm hover:shadow-md transition">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-black text-xl text-emerald-deep">DYNASTY</h3>
+                        <span class="text-xs px-2 py-0.5 bg-gold text-emerald-deep font-bold rounded">House 4</span>
+                    </div>
+                    <div class="space-y-1.5 text-xs text-gray-700 mb-4">
+                        <p><strong>Captain:</strong> Munavar</p>
+                        <p><strong>Icon:</strong> Shad</p>
+                        <p class="text-gray-500 mt-2"><strong>Members:</strong> sahal ibrahim, rilwan, rashid, ahraf, jabir, kais</p>
+                    </div>
+                    <div class="bg-emerald-deep text-gold p-3 rounded-lg text-center">
+                        <div class="text-[10px] uppercase tracking-wider text-gold/80">Total Points</div>
+                        <div class="text-2xl font-black" id="score-dynasty">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto pt-4">
+                <h4 class="font-bold text-emerald-deep text-lg mb-3">🏆 Official Talent Fest Leaderboard</h4>
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-emerald-deep text-gold text-xs uppercase tracking-wider">
+                            <th class="p-3 border border-gold/40">House</th>
+                            <th class="p-3 border border-gold/40">Arts Points</th>
+                            <th class="p-3 border border-gold/40">Sports Points</th>
+                            <th class="p-3 border border-gold/40">Total Points</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leaderboard-table-body" class="text-sm font-medium"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Academics Section -->
+        <section id="academics" class="bg-parchment-card paper-closure-border rounded-2xl p-8 md:p-12 space-y-6">
+            <div class="max-w-3xl">
+                <span class="text-gold-dark font-bold tracking-widest text-xs uppercase block mb-1">— Academics —</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-deep mb-4">A rhythm made for deep learning.</h2>
+                <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+                    Integrated study brings sacred knowledge and modern disciplines into a balanced daily programme, ensuring students flourish spiritually and intellectually.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+                <div class="bg-parchment p-6 rounded-xl border border-gold/40 shadow-sm">
+                    <span class="text-xs font-bold text-gold-dark uppercase tracking-wider block mb-1">09:00 AM Daily</span>
+                    <h3 class="text-xl font-bold text-emerald-deep mb-2">Qur’anic Studies</h3>
+                    <p class="text-xs text-gray-600">Hifz & Tajweed structured sessions fostering profound spiritual connection.</p>
+                </div>
+                <div class="bg-parchment p-6 rounded-xl border border-gold/40 shadow-sm">
+                    <span class="text-xs font-bold text-gold-dark uppercase tracking-wider block mb-1">Core Programme</span>
+                    <h3 class="text-xl font-bold text-emerald-deep mb-2">Secular & Islamic Core</h3>
+                    <p class="text-xs text-gray-600">Rigorous academic curriculum meeting top university standards.</p>
+                </div>
+                <div class="bg-parchment p-6 rounded-xl border border-gold/40 shadow-sm">
+                    <span class="text-xs font-bold text-gold-dark uppercase tracking-wider block mb-1">Afternoon Rhythm</span>
+                    <h3 class="text-xl font-bold text-emerald-deep mb-2">Clubs, Sport & Talent</h3>
+                    <p class="text-xs text-gray-600">Fostering physical wellness, public speaking, and leadership skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memories Section -->
+        <section id="memories" class="space-y-8">
+            <div class="text-center max-w-2xl mx-auto">
+                <span class="text-gold-dark font-bold tracking-widest text-xs uppercase block mb-1">— Memories —</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-deep">The days we’ll carry with us.</h2>
+                <p class="text-gray-600 mt-2">Every class, match, gathering, and quiet campus evening becomes part of our shared archive.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-parchment-card paper-closure-border rounded-xl overflow-hidden shadow-sm group">
+                    <div class="h-48 bg-emerald-deep/10 flex items-center justify-center text-emerald-deep font-bold text-lg group-hover:bg-emerald-deep/20 transition">🏛️ Campus Life</div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-emerald-deep text-lg mb-1">Halls & Study Circles</h3>
+                        <p class="text-xs text-gray-600">Moments of deep discussion and shared brotherhood across the corridors of Noorul Huda.</p>
+                    </div>
+                </div>
+                <div class="bg-parchment-card paper-closure-border rounded-xl overflow-hidden shadow-sm group">
+                    <div class="h-48 bg-emerald-deep/10 flex items-center justify-center text-emerald-deep font-bold text-lg group-hover:bg-emerald-deep/20 transition">⚽ On The Field</div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-emerald-deep text-lg mb-1">Sports & Energy</h3>
+                        <p class="text-xs text-gray-600">Thrilling football matches, evening sports leagues, and teamwork on the green turf.</p>
+                    </div>
+                </div>
+                <div class="bg-parchment-card paper-closure-border rounded-xl overflow-hidden shadow-sm group">
+                    <div class="h-48 bg-emerald-deep/10 flex items-center justify-center text-emerald-deep font-bold text-lg group-hover:bg-emerald-deep/20 transition">🌙 Brotherhood</div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-emerald-deep text-lg mb-1">Evening Gatherings</h3>
+                        <p class="text-xs text-gray-600">Unforgettable memories under the Karnataka skies, building bonds for a lifetime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="gold-gradient-bg text-white py-12 px-4 border-t-4 border-gold mt-20">
+        <div class="max-w-6xl mx-auto text-center space-y-4">
+            <div class="text-2xl font-black tracking-widest gold-gradient-text">EIZZAHIANZZ</div>
+            <p class="text-sm text-gold/90 font-light max-w-xl mx-auto">"Learning with faith. Leading with character."</p>
+            <div class="text-xs text-gray-300">Noorul Huda Central for Excellence • Madanoor, Puttur Taluk, Dakshina Kannada, Karnataka, India</div>
+            <div class="pt-4 border-t border-gold/20 text-xs text-gold font-semibold">Web Creator: MS Aboobakkar Siddiq • Batch 11 (EIZZAH)</div>
+        </div>
+    </footer>
+
+    <script>
+        const studentsList = [
+            "Muhammad Afeef", "Muhammad Shayan", "Sahal Ibraheem", "Muhad K.W", 
+            "Muhammad Azfar", "M.S. Aboobakkar Siddiq", "Ahmad Ihab", "Muhammad Raif", 
+            "Muhammad Ali", "Abdul Rahmaan", "Muhammad Favaz", "Shabeeb Ahmad", 
+            "Muhammad Hisham", "Muhammad Jabir", "Muhammad Aflal", "Abdul Afham", 
+            "Muhammad Rihan", "Muhammad Musthafa", "Muhammad Lubaib", "Ahmad Fathah", 
+            "Shamseer Aboobakkar", "Abdulla Niyaf", "Muhammad Ahraf", "Muhammad Rilwan", 
+            "Muhammad Ismail", "Muzhammil Shad", "Muhammad Sahal T.H", "Umarul Farooq", 
+            "Muhammad Zaid", "Muhammad Najeeb", "Muhammad Rashid", "Muhammad Kais", 
+            "Muhammad Affan", "Muhammad Ajmal", "Fazal", "M. Munavvar Ali"
+        ];
+
+        let festData = {
+            vortex: { name: "Vortex", arts: 0, sports: 0 },
+            phoenix: { name: "Phoenix", arts: 0, sports: 0 },
+            titans: { name: "Titans", arts: 0, sports: 0 },
+            dynasty: { name: "Dynasty", arts: 0, sports: 0 }
+        };
+
+        window.onload = function() {
+            renderMembers();
+            renderTeacherSelect();
+            updateLeaderboard();
+        };
+
+        function renderMembers() {
+            const grid = document.getElementById('members-grid');
+            grid.innerHTML = '';
+            studentsList.forEach((name, index) => {
+                const numStr = (index + 1 < 10 ? '0' : '') + (index + 1);
+                const card = document.createElement('div');
+                card.className = 'bg-parchment-card border border-gold/40 rounded-xl p-4 flex items-center space-x-4 shadow-sm hover:border-gold transition';
+                card.innerHTML = `
+                    <div class="w-10 h-10 rounded-lg bg-emerald-deep text-gold font-bold flex items-center justify-center text-sm shadow-inner shrink-0">${numStr}</div>
+                    <div class="font-bold text-emerald-deep text-sm truncate">${name}</div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function renderTeacherSelect() {
+            const select = document.getElementById('teacher-student-select');
+            select.innerHTML = '';
+            studentsList.forEach((name, index) => {
+                const opt = document.createElement('option');
+                opt.value = name;
+                opt.textContent = `${index + 1}. ${name}`;
+                select.appendChild(opt);
+            });
+        }
+
+        function loginPortal(role, correctPass) {
+            const passInput = document.getElementById(`pass-${role}`).value;
+            const gate = document.getElementById(`gate-${role}`);
+            const content = document.getElementById(`content-${role}`);
+            const status = document.getElementById(`status-${role}`);
+            const logoutBtn = document.getElementById(`logout-${role}`);
+
+            if (passInput === correctPass) {
+                gate.classList.add('hidden');
+                content.classList.remove('hidden');
+                status.textContent = 'Unlocked (Active)';
+                status.className = 'text-green-600 font-bold';
+                logoutBtn.classList.remove('hidden');
+            } else {
+                alert('Incorrect password! Please check credentials.');
+            }
+        }
+
+        function logoutPortal(role) {
+            const passInput = document.getElementById(`pass-${role}`);
+            const gate = document.getElementById(`gate-${role}`);
+            const content = document.getElementById(`content-${role}`);
+            const status = document.getElementById(`status-${role}`);
+            const logoutBtn = document.getElementById(`logout-${role}`);
+
+            passInput.value = '';
+            gate.classList.remove('hidden');
+            content.classList.add('hidden');
+            status.textContent = 'Locked';
+            status.className = 'text-amber-600 font-bold';
+            logoutBtn.classList.add('hidden');
+        }
+
+        function submitAssignment() {
+            const msg = document.getElementById('sub-msg');
+            msg.classList.remove('hidden');
+            setTimeout(() => msg.classList.add('hidden'), 4000);
+        }
+
+        let typingArabic = false;
+        function switchTypingLang() {
+            typingArabic = !typingArabic;
+            const btn = document.getElementById('typing-lang-btn');
+            const prompt = document.getElementById('typing-prompt');
+            if (typingArabic) {
+                btn.textContent = "Switch to English";
+                prompt.textContent = `Type this (Arabic): "العلم نور والإيمان قوة في معهد نور الهدى"`;
+            } else {
+                btn.textContent = "Switch to Arabic";
+                prompt.textContent = `Type this (English): "Excellence begins with character in Eizzahianzz."`;
+            }
+            document.getElementById('typing-input').value = '';
+            document.getElementById('wpm-count').textContent = '0';
+        }
+
+        function checkTyping() {
+            const text = document.getElementById('typing-input').value;
+            const words = text.trim().split(/\s+/).length;
+            document.getElementById('wpm-count').textContent = text.length > 0 ? words * 2 : 0;
+        }
+
+        function askAI() {
+            const queryInput = document.getElementById('ai-query');
+            const chatBox = document.getElementById('ai-chat-box');
+            const q = queryInput.value.trim();
+            if(!q) return;
+
+            chatBox.innerHTML += `<div class="text-right text-emerald-deep font-semibold">You: ${q}</div>`;
+            queryInput.value = '';
+
+            setTimeout(() => {
+                let ans = "As an AI assistant for Eizzahianzz, I recommend referring to authentic books in Fiqh and Hadith or consulting your respected teachers at Noorul Huda.";
+                if(q.toLowerCase().includes('fiqh')) ans = "In Islamic Fiqh, matters of cleanliness (Taharah) and prayer (Salah) are fundamental daily practices.";
+                if(q.toLowerCase().includes('arabic')) ans = "Arabic grammar (Nahw and Sarf) requires consistent practice of sentence parsing (I'rab).";
+                
+                chatBox.innerHTML += `<div class="text-left text-emerald-base bg-gold/10 p-1.5 rounded">AI: ${ans}</div>`;
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }, 600);
+        }
+
+        function saveAttendance() {
+            const msg = document.getElementById('att-msg');
+            msg.classList.remove('hidden');
+            setTimeout(() => msg.classList.add('hidden'), 4000);
+        }
+
+        function teacherUpdateMark() {
+            const msg = document.getElementById('teacher-msg');
+            msg.classList.remove('hidden');
+            setTimeout(() => msg.classList.add('hidden'), 4000);
+        }
+
+        function teacherAddFestPoints() {
+            const team = document.getElementById('fest-team-select').value;
+            const addArts = parseInt(document.getElementById('fest-arts-add').value) || 0;
+            const addSports = parseInt(document.getElementById('fest-sports-add').value) || 0;
+
+            festData[team].arts += addArts;
+            festData[team].sports += addSports;
+
+            document.getElementById('fest-arts-add').value = '';
+            document.getElementById('fest-sports-add').value = '';
+
+            updateLeaderboard();
+            alert('Talent Fest leaderboard updated successfully!');
+        }
+
+        function updateLeaderboard() {
+            const tbody = document.getElementById('leaderboard-table-body');
+            tbody.innerHTML = '';
+
+            const sortedTeams = Object.keys(festData).map(key => {
+                const item = festData[key];
+                return { key, ...item, total: item.arts + item.sports };
+            }).sort((a, b) => b.total - a.total);
+
+            sortedTeams.forEach((team, index) => {
+                document.getElementById(`score-${team.key}`).textContent = team.total;
+
+                const row = document.createElement('tr');
+                row.className = index % 2 === 0 ? 'bg-parchment' : 'bg-white';
+                row.innerHTML = `
+                    <td class="p-3 border border-gold/30 font-bold text-emerald-deep">${index + 1}. ${team.name}</td>
+                    <td class="p-3 border border-gold/30">${team.arts}</td>
+                    <td class="p-3 border border-gold/30">${team.sports}</td>
+                    <td class="p-3 border border-gold/30 font-black text-emerald-base">${team.total}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function adminBroadcast() {
+            const msg = document.getElementById('admin-msg');
+            msg.classList.remove('hidden');
+            setTimeout(() => msg.classList.add('hidden'), 4000);
+        }
+
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
